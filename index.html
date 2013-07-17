@@ -13,23 +13,31 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <style>
-/* CSS Mobile Reset */
+html {
+	background: #333 url('bg.jpg') no-repeat fixed left top;
+	background-size:cover;
+}
+
 html, body
 {
  margin: 0;
  padding: 0; 
  border: 0;
 }
-
+@media (min-width:600px) {
+	body {
+		width:320px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
 body 
 {
  font-family:Arial,  sans-serif;
  line-height:1.5;
  font-size:16px;
- background: #333 url('bg.jpg') no-repeat fixed left top;
- background-size:cover;
- padding:5px;
  color: #f1f1f1;
+ padding:5px;
  word-wrap: break-word;
  -webkit-text-size-adjust: none;
 }
